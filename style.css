@@ -44,6 +44,8 @@ body {
 .content-items-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 250px;
+    border: black;
 }
 .content-item-wrapper{
     position: relative;
@@ -64,14 +66,33 @@ body {
     align-items: center;
     height: 100%;
     text-align: center;
-    padding-left: 100px;
+    padding-left: 200px;
     padding-right: 100px;
 }
-.logo-wrapper img{
-    width: 50%;
-    margin-bottom: 20px;
+.img-text-wrapper .subtitle{
+    transition: 1s;
+    color:transparent;
+    font-weight: 600;
 
 }
-.subtitle{
-    
+.img-text-wrapper:hover .subtitle{
+    font-weight: 600;
+    color: blue;
+
+
+}
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
+/* About */
+.two-column-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.profile-img-wrapper img{
+    width: 100%;
+}
+.profile-content-wrapper{
+    padding: 30px;
 }
